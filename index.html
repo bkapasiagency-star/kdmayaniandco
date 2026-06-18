@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.D. Mayani & Co. | Chartered Accountant in Surat</title>
+    <meta name="description" content="K.D. Mayani & Co. provides expert Chartered Accountant services in Surat including ITR Filing, GST Compliance, Project Finance, Home Loans, Audits, Investment Advisory, Company Registration and Tax Planning.">
+    <meta name="keywords" content="CA in Surat, Chartered Accountant Surat, GST Consultant Surat, Income Tax Consultant Surat, Home Loan Consultant Surat, Project Finance Consultant Surat, Tax Planning Surat, Ketan Mayani CA, Accounting Services Surat">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#003366',
+                        saffron: '#FF9933',
+                        cagreen: '#138808',
+                        dark: '#0f172a',
+                        whatsapp: '#25D366',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #fafbfd;
+            overflow-x: hidden;
+            padding-bottom: 0; /* Default */
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 60px; /* Space for mobile sticky footer */
+            }
+        }
+        
+        /* Glassmorphism utilities */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+        
+        .glass-hero {
+            background: radial-gradient(circle at top right, rgba(0, 51, 102, 0.05), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(255, 153, 51, 0.05), transparent 40%);
+        }
+
+        /* Scroll Progress Bar */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(to right, #003366, #FF9933, #138808);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        /* Background floating pattern */
+        .bg-pattern {
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 32px 32px;
+            opacity: 0.5;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* Lenis smooth scroll reset */
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-24 md:bottom-8 right-6 md:right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 translate-y-10 transition-all duration-300 z-40 hover:bg-dark hover:scale-110">
+        <i class="ri-arrow-up-line text-xl"></i>
+    </button>
+
+    <!-- Desktop Floating WhatsApp -->
+    <a href="https://wa.me/919638980326" target="_blank" class="hidden md:flex fixed bottom-8 left-8 bg-whatsapp text-white w-14 h-14 rounded-full items-center justify-center shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:scale-110 transition-all duration-300 z-50">
+        <i class="ri-whatsapp-line text-3xl"></i>
+    </a>
+
+    <!-- Mobile Sticky Call/WhatsApp Footer -->
+    <div class="fixed bottom-0 left-0 w-full z-[100] flex md:hidden bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+        <a href="tel:+919638980326" class="flex-1 bg-primary text-white py-3 flex items-center justify-center gap-2 font-bold text-sm transition-colors active:bg-dark">
+            <i class="ri-phone-fill text-lg"></i> Book Consultation
+        </a>
+        <a href="https://wa.me/919638980326" target="_blank" class="flex-1 bg-whatsapp text-white py-3 flex items-center justify-center gap-2 font-bold text-sm transition-colors active:bg-[#1ebe57]">
+            <i class="ri-whatsapp-fill text-lg"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center gap-3">
+                    <img src="CA Logo.jpg" alt="K.D. Mayani & Co. Logo" class="h-12 object-contain" onerror="this.src='https://placehold.co/150x50/ffffff/003366?text=CA+Logo'">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">About</a>
+                    <a href="#services" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">Services</a>
+                    <a href="#why-us" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">Why Us</a>
+                    <a href="#blog" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">Blog</a>
+                    <a href="#contact" class="text-sm font-semibold text-gray-800 hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="tel:+919638980326" class="bg-primary text-white px-6 py-3 rounded-full text-sm font-bold shadow-[0_4px_14px_0_rgba(0,51,102,0.39)] hover:shadow-[0_6px_20px_rgba(0,51,102,0.23)] hover:bg-dark transition-all duration-300 flex items-center gap-2">
+                        <i class="ri-phone-fill"></i> Book Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-2xl text-primary" id="mobileMenuBtn">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 pt-24 px-6 md:hidden">
+        <div class="flex flex-col space-y-6 text-lg font-semibold">
+            <a href="#home" class="mobile-link text-gray-800">Home</a>
+            <a href="#about" class="mobile-link text-gray-800">About</a>
+            <a href="#services" class="mobile-link text-gray-800">Services</a>
+            <a href="#why-us" class="mobile-link text-gray-800">Why Us</a>
+            <a href="#blog" class="mobile-link text-gray-800">Blog</a>
+            <a href="#contact" class="mobile-link text-gray-800">Contact</a>
+            
+            <a href="tel:+919638980326" class="bg-primary text-white text-center py-4 rounded-xl mt-4 flex items-center justify-center gap-2">
+                <i class="ri-phone-fill"></i> Book Consultation
+            </a>
+            <a href="https://wa.me/919638980326" target="_blank" class="bg-whatsapp text-white text-center py-4 rounded-xl mt-2 flex items-center justify-center gap-2">
+                <i class="ri-whatsapp-fill"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden glass-hero">
+        <div class="absolute inset-0 bg-pattern z-0"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="gsap-hero-text">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 border border-primary/10">
+                    <span class="w-2 h-2 rounded-full bg-saffron animate-pulse"></span>
+                    <span class="text-xs font-bold text-primary tracking-wider uppercase">Premium Financial Advisory</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">
+                    Trusted Financial & Tax Advisory For <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500">Businesses</span> & <span class="text-transparent bg-clip-text bg-gradient-to-r from-saffron to-orange-400">Individuals</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+                    Helping businesses and individuals stay compliant, save taxes, secure funding and build wealth through expert financial guidance.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="tel:+919638980326" class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-dark transition-all duration-300 flex items-center gap-2 hover:-translate-y-1">
+                        <i class="ri-phone-fill"></i> Book Consultation
+                    </a>
+                    <a href="https://wa.me/919638980326" target="_blank" class="glass-card text-whatsapp border-whatsapp/20 px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 flex items-center gap-2 hover:-translate-y-1">
+                        <i class="ri-whatsapp-fill text-xl"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative gsap-hero-image">
+                <!-- Floating Elements -->
+                <div class="relative w-full aspect-square md:aspect-auto md:h-[600px] flex items-center justify-center">
+                    
+                    <div class="absolute top-10 right-10 glass-card p-6 rounded-2xl animate-[bounce_4s_ease-in-out_infinite] z-20">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-cagreen">
+                                <i class="ri-shield-check-fill text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-semibold">Client Retention</p>
+                                <p class="text-2xl font-bold text-dark">98%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-20 left-0 glass-card p-6 rounded-2xl animate-[bounce_5s_ease-in-out_infinite] z-20 shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                                <i class="ri-user-star-fill text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-semibold">Happy Clients</p>
+                                <p class="text-2xl font-bold text-dark">700+</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Abstract Illustration base -->
+                    <div class="w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-primary/10 to-saffron/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+                    <img src="CA Logo.jpg" alt="CA Logo" class="w-64 h-64 object-contain relative z-10 drop-shadow-2xl opacity-90" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 border-y border-gray-200 bg-white relative z-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-100">
+                <div class="text-center gsap-fade-up">
+                    <h3 class="text-4xl font-extrabold text-primary mb-2 flex items-center justify-center"><span class="counter" data-target="700">0</span>+</h3>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Happy Clients</p>
+                </div>
+                <div class="text-center gsap-fade-up" style="transition-delay: 0.1s;">
+                    <h3 class="text-4xl font-extrabold text-saffron mb-2 flex items-center justify-center"><span class="counter" data-target="98">0</span>%</h3>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Retention Rate</p>
+                </div>
+                <div class="text-center gsap-fade-up" style="transition-delay: 0.2s;">
+                    <h3 class="text-4xl font-extrabold text-cagreen mb-2 flex items-center justify-center"><span class="counter" data-target="100">0</span>%</h3>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Satisfaction</p>
+                </div>
+                <div class="text-center gsap-fade-up" style="transition-delay: 0.3s;">
+                    <h3 class="text-4xl font-extrabold text-dark mb-2">Since <span class="counter" data-target="2024">0</span></h3>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Established</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-pattern z-0 opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="relative gsap-fade-up">
+                    <div class="absolute inset-0 bg-primary rounded-3xl translate-x-4 translate-y-4 opacity-10"></div>
+                    <div class="glass-card rounded-3xl p-2 relative z-10 shadow-2xl">
+                        <img src="Ketan Pic.jpg" alt="CA Ketan Mayani" class="w-full h-[500px] object-cover rounded-2xl" onerror="this.src='https://placehold.co/600x800/e2e8f0/003366?text=CA+Ketan+Mayani'">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4">
+                            <i class="ri-award-fill text-4xl text-saffron"></i>
+                            <div>
+                                <p class="font-bold text-dark text-lg">CA Ketan Mayani</p>
+                                <p class="text-sm text-gray-500">Founder & Principal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gsap-fade-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 border border-primary/10">
+                        <span class="text-sm font-bold text-primary tracking-wider uppercase">About The Founder</span>
+                    </div>
+                    <h2 class="text-4xl font-extrabold text-dark mb-6 leading-tight">
+                        Dedicated To Your Financial <span class="text-primary">Success & Compliance.</span>
+                    </h2>
+                    <div class="space-y-6 text-gray-600 text-lg">
+                        <p>
+                            CA Ketan Mayani is a dedicated Chartered Accountant committed to delivering reliable financial, taxation and business advisory services to individuals, startups and established businesses.
+                        </p>
+                        <p>
+                            With expertise across direct taxation, GST, project finance, audits, investment advisory and business compliance, he helps clients make informed financial decisions while ensuring complete regulatory compliance.
+                        </p>
+                        <p>
+                            His client-first approach, practical solutions and professional integrity have enabled <strong>K.D. Mayani & Co.</strong> to become a trusted advisory partner for hundreds of businesses and individuals across Surat and beyond.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex gap-6">
+                        <div class="glass-card px-6 py-4 rounded-xl border-l-4 border-l-primary flex-1">
+                            <p class="text-sm text-gray-500 mb-1">Qualification</p>
+                            <p class="font-bold text-dark">Chartered Accountant (CA)</p>
+                        </div>
+                        <div class="glass-card px-6 py-4 rounded-xl border-l-4 border-l-saffron flex-1">
+                            <p class="text-sm text-gray-500 mb-1">Qualification</p>
+                            <p class="font-bold text-dark">Bachelor of Commerce (B.Com)</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-4 border border-primary/10">
+                    <span class="text-sm font-bold text-primary tracking-wider uppercase">Our Expertise</span>
+                </div>
+                <h2 class="text-4xl font-extrabold text-dark mb-4">Comprehensive Financial Solutions</h2>
+                <p class="text-lg text-gray-600">End-to-end advisory and compliance services tailored for your unique business and personal needs.</p>
+            </div>
+
+            <!-- Services Grid Dynamically Generated -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-file-list-3-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">ITR Filing</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Accurate income tax return filing for individuals, professionals and businesses.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Individual ITR Filing</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Business ITR Filing</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Tax Computation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Tax Saving Guidance</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Revised Returns</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-building-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">GST Compliances</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Comprehensive GST registration, filing and compliance support.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>GST Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Monthly GST Returns</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Annual Returns</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>GST Reconciliation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>GST Advisory</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-search-eye-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Income Tax & GST Scrutiny</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Professional representation during departmental notices and assessments.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Notice Handling</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Department Representation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation Support</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Assessment Proceedings</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Appeals Support</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-pie-chart-2-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Project Finance</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">End-to-end assistance for business funding and project financing.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>DPR Preparation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>CMA Data</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Financial Projections</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Bank Liaison</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Loan Documentation</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-home-smile-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Home Loan</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Expert guidance for housing finance solutions.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>New Home Loans</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Balance Transfer</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Top-Up Loans</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Loan Eligibility Analysis</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-safe-2-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Mortgage Loan</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Funding against residential, commercial and industrial properties.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>LAP Processing</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Property Evaluation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Bank Coordination</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-money-dollar-circle-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Working Capital</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Helping businesses maintain smooth cash flow.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Cash Credit</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Overdraft</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Bank Limits</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Renewal Assistance</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Enhancement Proposals</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-file-search-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Internal Audit</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Independent audit services to improve internal controls and efficiency.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Risk Assessment</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Compliance Checks</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Process Review</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Internal Controls</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Reporting</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-line-chart-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Investment Consulting</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Helping clients create long-term wealth.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Stock Market Advisory</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>SIP Planning</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Mutual Funds</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Portfolio Review</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Wealth Creation Strategy</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-book-read-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Accounting & Book Keeping</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Reliable accounting solutions for businesses.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Daily Accounting</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Financial Statements</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Ledger Maintenance</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>MIS Reports</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Cloud Accounting</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-percent-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">TDS / TCS Compliances</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Ensuring timely deduction, collection and filing.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>TDS Returns</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>TCS Returns</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Challan Management</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Reconciliation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Compliance Monitoring</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-plant-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Tax Planning & Harvesting</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Strategic tax planning to optimize savings.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Personal Tax Planning</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Business Tax Planning</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Tax Harvesting</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Investment Planning</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-exchange-dollar-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Capital Gain Advisory</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Expert guidance on capital gain taxation.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Property Transactions</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Equity Gains</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Tax Calculation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Exemption Planning</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-bank-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Company & LLP Incorporation</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Business formation and compliance support.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Company Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>LLP Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>ROC Filings</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Compliance Advisory</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-rocket-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Startup Advisory</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Supporting startups from idea to growth.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Entity Selection</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Registrations</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Financial Planning</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Compliance Setup</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-copyright-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Trademark & Copyright</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Protecting intellectual property.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Trademark Filing</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Copyright Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Objection Handling</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Renewal Support</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-ship-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">DGFT</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Import-export registrations and compliance.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>IEC Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>DGFT Advisory</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Export Benefits</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-refund-2-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">GST Refund</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Timely GST refund processing.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Refund Applications</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Export Refunds</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Follow-Up Support</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-article-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">EPCG Authorisation</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Support for EPCG benefits and compliance.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Application Filing</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Compliance Monitoring</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.1s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-global-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">FEMA Guidance</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Expert advisory on foreign exchange regulations.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>FEMA Compliance</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Overseas Transactions</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>RBI Regulations</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.2s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-group-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">NGO & Trust Incorporation</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Legal setup and compliance management.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Trust Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>NGO Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>12A Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>80G Registration</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Annual Compliance</span></li>
+            </ul>
+        </div>
+        
+        <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl gsap-fade-up" style="transition-delay: 0.0s;">
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-[#003366]">
+                <i class="ri-hand-coin-line text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Subsidy Consultation</h3>
+            <p class="text-gray-600 mb-6 text-sm h-10">Helping businesses access government incentives.</p>
+            <div class="h-px w-full bg-gray-200 mb-6"></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Subsidy Identification</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Documentation</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Application Assistance</span></li><li class="flex items-start"><i class="ri-check-line text-[#138808] mr-2 mt-0.5"></i><span>Follow-Up Support</span></li>
+            </ul>
+        </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-24 bg-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('CA Logo.jpg')] bg-no-repeat bg-center bg-cover opacity-[0.03] grayscale invert"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
+                <h2 class="text-4xl font-extrabold mb-4">Why Partner With Us?</h2>
+                <p class="text-lg text-gray-400">We don't just crunch numbers; we provide strategic insights to propel your growth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 gsap-fade-up">
+                    <i class="ri-shield-user-line text-4xl text-saffron mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Trusted Professional Guidance</h3>
+                    <p class="text-gray-400 text-sm">Personalized financial and taxation solutions designed specifically for your goals.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 gsap-fade-up" style="transition-delay: 0.1s;">
+                    <i class="ri-file-shield-2-line text-4xl text-primary mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">End-To-End Compliance</h3>
+                    <p class="text-gray-400 text-sm">Complete compliance management under one roof, keeping you penalty-free.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 gsap-fade-up" style="transition-delay: 0.2s;">
+                    <i class="ri-focus-3-line text-4xl text-cagreen mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Client-Centric Approach</h3>
+                    <p class="text-gray-400 text-sm">Focused completely on your long-term success, wealth creation, and peace of mind.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 gsap-fade-up" style="transition-delay: 0.3s;">
+                    <i class="ri-speed-up-line text-4xl text-blue-400 mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Fast & Reliable Service</h3>
+                    <p class="text-gray-400 text-sm">Timely execution of tasks with maximum accuracy and proactive communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white relative">
+        <div class="absolute inset-0 bg-pattern z-0 opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600">Trust built through consistent delivery and professional excellence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative gsap-fade-up">
+                    <i class="ri-double-quotes-l text-4xl text-primary/20 absolute top-6 left-6"></i>
+                    <div class="flex text-saffron mb-4 relative z-10">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 relative z-10">"CA Ketan Mayani handles all our company compliances seamlessly. Their deep knowledge of GST and Corporate Taxation has saved us immensely. Truly a premium consulting experience."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-500">R</div>
+                        <div>
+                            <p class="font-bold text-dark">Rahul Desai</p>
+                            <p class="text-xs text-gray-500">Manufacturing Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative gsap-fade-up" style="transition-delay: 0.1s;">
+                    <i class="ri-double-quotes-l text-4xl text-primary/20 absolute top-6 left-6"></i>
+                    <div class="flex text-saffron mb-4 relative z-10">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 relative z-10">"We applied for a major project finance loan, and the DPR and projections prepared by KD Mayani & Co were flawless. The bank approved it without a single query. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-500">S</div>
+                        <div>
+                            <p class="font-bold text-dark">Sanjay Patel</p>
+                            <p class="text-xs text-gray-500">Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative gsap-fade-up" style="transition-delay: 0.2s;">
+                    <i class="ri-double-quotes-l text-4xl text-primary/20 absolute top-6 left-6"></i>
+                    <div class="flex text-saffron mb-4 relative z-10">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 relative z-10">"From individual ITR filing to long-term wealth planning, CA Ketan has been our go-to advisor. His proactive approach to tax harvesting is exceptional."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-500">A</div>
+                        <div>
+                            <p class="font-bold text-dark">Amit Shah</p>
+                            <p class="text-xs text-gray-500">IT Professional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section (CMS Ready) -->
+    <section id="blog" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between items-end mb-12 gsap-fade-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-extrabold text-dark mb-4">Insights & Updates</h2>
+                    <p class="text-lg text-gray-600">Stay informed with our latest articles on taxation, finance, and compliance.</p>
+                </div>
+                <a href="#" class="text-primary font-semibold hover:underline flex items-center gap-1 mt-4">View All Articles <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Blog Card -->
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up">
+                    <div class="h-48 bg-blue-100 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300"></div>
+                        <i class="ri-article-line text-6xl text-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-saffron font-bold mb-2">TAXATION</p>
+                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">Tax Saving Strategies Every Business Should Know</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">Discover legal frameworks and investments to minimize your corporate tax liability effectively.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.1s;">
+                    <div class="h-48 bg-green-100 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cagreen/20 group-hover:bg-transparent transition-all duration-300"></div>
+                        <i class="ri-file-text-line text-6xl text-cagreen absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-saffron font-bold mb-2">COMPLIANCE</p>
+                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">GST Compliance Checklist For SMEs</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">Ensure your small or medium enterprise is 100% compliant with the latest GST regulations.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.2s;">
+                    <div class="h-48 bg-orange-100 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-saffron/20 group-hover:bg-transparent transition-all duration-300"></div>
+                        <i class="ri-mail-send-line text-6xl text-saffron absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-saffron font-bold mb-2">ADVISORY</p>
+                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">How To Prepare For Income Tax Notices</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">A step-by-step guide on what to do if you receive a scrutiny notice from the IT department.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.3s;">
+                    <div class="h-48 bg-blue-50 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-all duration-300"></div>
+                        <i class="ri-home-4-line text-6xl text-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-saffron font-bold mb-2">FINANCE</p>
+                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">Home Loan Tips For First Time Buyers</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">Navigate the complexities of securing your first home loan with these expert tips.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <div class="gsap-fade-up">
+                    <h2 class="text-4xl font-extrabold text-dark mb-6">Get In Touch</h2>
+                    <p class="text-lg text-gray-600 mb-8">Ready to streamline your finances? Book a consultation with us today.</p>
+                    
+                    <div class="space-y-8 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-primary shrink-0">
+                                <i class="ri-map-pin-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">Office Address</h4>
+                                <p class="text-gray-600 mt-1">541, Meridian Business Center (MBC),<br>Lajamani Chowk, Mota Varachha,<br>Surat - 394101, Gujarat, India.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-cagreen shrink-0">
+                                <i class="ri-phone-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">Contact Number</h4>
+                                <p class="text-gray-600 mt-1"><a href="tel:+919638980326" class="hover:text-primary transition-colors">+91 9638980326</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center text-saffron shrink-0">
+                                <i class="ri-mail-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">Email Address</h4>
+                                <p class="text-gray-600 mt-1"><a href="mailto:caketankumarmayani@gmail.com" class="hover:text-primary transition-colors">caketankumarmayani@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden relative shadow-inner">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.79058229891!2d72.8809989!3d21.240108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4e1f7a0701%3A0x6b1cfb26ea8bd42c!2sMeridian%20Business%20Center%20(MBC)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="gsap-fade-up">
+                    <div class="glass-card p-8 md:p-10 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Send Us A Message</h3>
+                        <form id="contactForm" class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully! We will contact you soon.'); this.reset();">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="John Doe">
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                                    <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Mobile Number *</label>
+                                    <input type="tel" required pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="10-digit number">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">How can we help you? *</label>
+                                <textarea required rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm resize-none" placeholder="Briefly describe your requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                                Submit Enquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 pt-20 pb-10 border-t border-white/10 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <div class="lg:col-span-1">
+                    <div class="bg-white p-3 rounded-xl inline-block mb-6">
+                        <img src="CA Logo.jpg" alt="Logo" class="h-10 object-contain">
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        "Your Trusted Partner In Taxation, Finance & Compliance."
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><i class="ri-facebook-fill"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> About Us</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Why Choose Us</a></li>
+                        <li><a href="#blog" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Top Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> ITR & GST Filing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Project Finance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Internal Audits</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Company Incorporation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-2"><i class="ri-arrow-right-s-line text-primary"></i> Investment Advisory</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary text-lg mt-0.5"></i>
+                            <span>541, MBC, Lajamani Chowk, Mota Varachha, Surat - 394101</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary text-lg"></i>
+                            <a href="tel:+919638980326" class="hover:text-white">+91 9638980326</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary text-lg"></i>
+                            <a href="mailto:caketankumarmayani@gmail.com" class="hover:text-white">caketankumarmayani@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 pb-12 md:pb-0">
+                <p class="text-sm text-gray-500">© 2025 K.D. Mayani & Co. All Rights Reserved.</p>
+                <p class="text-sm text-gray-500">Designed with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <script>
+        // 1. Lenis Smooth Scroll Setup
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Sync GSAP ScrollTrigger with Lenis
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => { lenis.raf(time * 1000) });
+        gsap.ticker.lagSmoothing(0);
+
+        // 2. Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        });
+
+        // 3. Sticky Navbar & Back to Top behavior
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.style.padding = '0.75rem 0';
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.style.padding = '1rem 0';
+            }
+
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'translate-y-10');
+                backToTop.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTop.classList.add('opacity-0', 'translate-y-10');
+                backToTop.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 4. Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if(isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenuBtn.innerHTML = '<i class="ri-close-line"></i>';
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenuBtn.innerHTML = '<i class="ri-menu-4-line"></i>';
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenuBtn.innerHTML = '<i class="ri-menu-4-line"></i>';
+                isMenuOpen = false;
+            });
+        });
+
+        // 5. GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Animations
+        gsap.from(".gsap-hero-text > *", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out",
+            delay: 0.2
+        });
+        
+        gsap.from(".gsap-hero-image", {
+            x: 30,
+            opacity: 0,
+            duration: 1.5,
+            ease: "power3.out",
+            delay: 0.5
+        });
+
+        // Fade Up Elements
+        gsap.utils.toArray('.gsap-fade-up').forEach(element => {
+            gsap.fromTo(element, 
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: element,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    }
+                }
+            );
+        });
+
+        // 6. Number Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        
+        counters.forEach(counter => {
+            ScrollTrigger.create({
+                trigger: counter,
+                start: "top 90%",
+                once: true,
+                onEnter: () => {
+                    const target = +counter.getAttribute('data-target');
+                    const duration = 2000; // ms
+                    const step = target / (duration / 16); // 60fps
+                    
+                    let current = 0;
+                    const updateCounter = () => {
+                        current += step;
+                        if(current < target) {
+                            counter.innerText = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCounter();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

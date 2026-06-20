@@ -699,7 +699,7 @@
         </div>
     </section>
 
-    <!-- Blog Section (CMS Ready) -->
+    <!-- Blog Section (Contentful CMS) -->
     <section id="blog" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-wrap justify-between items-end mb-12 gsap-fade-up">
@@ -707,61 +707,68 @@
                     <h2 class="text-4xl font-extrabold text-dark mb-4">Insights & Updates</h2>
                     <p class="text-lg text-gray-600">Stay informed with our latest articles on taxation, finance, and compliance.</p>
                 </div>
-                <a href="#" class="text-primary font-semibold hover:underline flex items-center gap-1 mt-4">View All Articles <i class="ri-arrow-right-line"></i></a>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Blog Card -->
-                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up">
-                    <div class="h-48 bg-blue-100 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300"></div>
-                        <i class="ri-article-line text-6xl text-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+            <!-- Blog grid populated dynamically from Contentful -->
+            <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Loading skeletons -->
+                <div class="blog-skeleton glass-card rounded-2xl overflow-hidden animate-pulse">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6 space-y-3">
+                        <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+                        <div class="h-4 w-full bg-gray-200 rounded"></div>
+                        <div class="h-4 w-2/3 bg-gray-200 rounded"></div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-xs text-saffron font-bold mb-2">TAXATION</p>
-                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">Tax Saving Strategies Every Business Should Know</h3>
-                        <p class="text-sm text-gray-600 line-clamp-2">Discover legal frameworks and investments to minimize your corporate tax liability effectively.</p>
+                </div>
+                <div class="blog-skeleton glass-card rounded-2xl overflow-hidden animate-pulse">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6 space-y-3">
+                        <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+                        <div class="h-4 w-full bg-gray-200 rounded"></div>
+                        <div class="h-4 w-2/3 bg-gray-200 rounded"></div>
                     </div>
-                </article>
-
-                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.1s;">
-                    <div class="h-48 bg-green-100 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-cagreen/20 group-hover:bg-transparent transition-all duration-300"></div>
-                        <i class="ri-file-text-line text-6xl text-cagreen absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
+                </div>
+                <div class="blog-skeleton glass-card rounded-2xl overflow-hidden animate-pulse hidden md:block">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6 space-y-3">
+                        <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+                        <div class="h-4 w-full bg-gray-200 rounded"></div>
+                        <div class="h-4 w-2/3 bg-gray-200 rounded"></div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-xs text-saffron font-bold mb-2">COMPLIANCE</p>
-                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">GST Compliance Checklist For SMEs</h3>
-                        <p class="text-sm text-gray-600 line-clamp-2">Ensure your small or medium enterprise is 100% compliant with the latest GST regulations.</p>
+                </div>
+                <div class="blog-skeleton glass-card rounded-2xl overflow-hidden animate-pulse hidden lg:block">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6 space-y-3">
+                        <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+                        <div class="h-4 w-full bg-gray-200 rounded"></div>
+                        <div class="h-4 w-2/3 bg-gray-200 rounded"></div>
                     </div>
-                </article>
-
-                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.2s;">
-                    <div class="h-48 bg-orange-100 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-saffron/20 group-hover:bg-transparent transition-all duration-300"></div>
-                        <i class="ri-mail-send-line text-6xl text-saffron absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-xs text-saffron font-bold mb-2">ADVISORY</p>
-                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">How To Prepare For Income Tax Notices</h3>
-                        <p class="text-sm text-gray-600 line-clamp-2">A step-by-step guide on what to do if you receive a scrutiny notice from the IT department.</p>
-                    </div>
-                </article>
-
-                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up" style="transition-delay: 0.3s;">
-                    <div class="h-48 bg-blue-50 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-all duration-300"></div>
-                        <i class="ri-home-4-line text-6xl text-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-xs text-saffron font-bold mb-2">FINANCE</p>
-                        <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">Home Loan Tips For First Time Buyers</h3>
-                        <p class="text-sm text-gray-600 line-clamp-2">Navigate the complexities of securing your first home loan with these expert tips.</p>
-                    </div>
-                </article>
+                </div>
             </div>
+
+            <p id="blog-empty" class="text-center text-gray-500 py-12 hidden">No articles published yet. Check back soon.</p>
+            <p id="blog-error" class="text-center text-red-500 py-12 hidden">Couldn't load articles right now. Please try again later.</p>
         </div>
     </section>
+
+    <!-- Blog Post Modal -->
+    <div id="blogModal" class="fixed inset-0 z-[200] hidden">
+        <div id="blogModalOverlay" class="absolute inset-0 bg-dark/70 backdrop-blur-sm"></div>
+        <div class="relative h-full w-full flex items-start md:items-center justify-center p-4 md:p-8 overflow-y-auto">
+            <div class="relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl my-8 md:my-0 overflow-hidden">
+                <button id="blogModalClose" class="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white text-dark w-10 h-10 rounded-full flex items-center justify-center shadow-md transition-colors">
+                    <i class="ri-close-line text-xl"></i>
+                </button>
+                <div id="blogModalImage" class="h-56 md:h-72 bg-primary/10 relative overflow-hidden"></div>
+                <div class="p-6 md:p-10">
+                    <p id="blogModalCategory" class="text-xs text-saffron font-bold mb-2"></p>
+                    <h3 id="blogModalTitle" class="text-2xl md:text-3xl font-extrabold text-dark mb-2 leading-tight"></h3>
+                    <p id="blogModalDate" class="text-sm text-gray-400 mb-6"></p>
+                    <div id="blogModalBody" class="prose prose-slate max-w-none text-gray-700 leading-relaxed space-y-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 relative overflow-hidden bg-white">
@@ -813,28 +820,30 @@
                 <div class="gsap-fade-up">
                     <div class="glass-card p-8 md:p-10 rounded-3xl shadow-xl">
                         <h3 class="text-2xl font-bold text-dark mb-6">Send Us A Message</h3>
-                        <form id="contactForm" class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully! We will contact you soon.'); this.reset();">
+                        <form id="contactForm" action="https://formspree.io/f/mojzgzyl" method="POST" class="space-y-6">
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
-                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="John Doe">
+                                <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="John Doe">
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
-                                    <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="john@example.com">
+                                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="john@example.com">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Mobile Number *</label>
-                                    <input type="tel" required pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="10-digit number">
+                                    <input type="tel" name="mobile" required pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm" placeholder="10-digit number">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">How can we help you? *</label>
-                                <textarea required rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm resize-none" placeholder="Briefly describe your requirements..."></textarea>
+                                <textarea name="message" required rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white/50 backdrop-blur-sm resize-none" placeholder="Briefly describe your requirements..."></textarea>
                             </div>
-                            <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
-                                Submit Enquiry
+                            <button type="submit" id="contactSubmitBtn" class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
+                                <span id="contactSubmitText">Submit Enquiry</span>
                             </button>
+                            <p id="contactFormSuccess" class="hidden text-center text-cagreen font-semibold text-sm">✓ Message sent successfully! We will contact you soon.</p>
+                            <p id="contactFormError" class="hidden text-center text-red-500 font-semibold text-sm">Something went wrong. Please try again or call us directly.</p>
                         </form>
                     </div>
                 </div>
@@ -1060,6 +1069,193 @@
                     updateCounter();
                 }
             });
+        });
+    </script>
+
+    <!-- Contentful Blog Integration -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@10/dist/contentful.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@16/dist/rich-text-html-renderer.browser.min.js"></script>
+    <script>
+        // ====== CONFIGURE THESE TWO VALUES ======
+        const CONTENTFUL_SPACE_ID = "s3o97s0qy1w3";
+        const CONTENTFUL_ACCESS_TOKEN = "S6yfAdyPWlyAirXtN4CzN9Zn7jp86TPuDJZEYECxf3A";
+        const CONTENTFUL_ENVIRONMENT = "master";
+        // =========================================
+
+        const blogIcons = ["ri-article-line", "ri-file-text-line", "ri-mail-send-line", "ri-home-4-line", "ri-briefcase-4-line", "ri-bank-line"];
+        const blogColors = [
+            { bg: "bg-blue-100", overlay: "bg-primary/20", text: "text-primary" },
+            { bg: "bg-green-100", overlay: "bg-cagreen/20", text: "text-cagreen" },
+            { bg: "bg-orange-100", overlay: "bg-saffron/20", text: "text-saffron" },
+            { bg: "bg-blue-50", overlay: "bg-dark/10", text: "text-dark" }
+        ];
+
+        function formatDate(dateStr) {
+            if (!dateStr) return "";
+            return new Date(dateStr).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" });
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement("div");
+            div.innerText = str || "";
+            return div.innerHTML;
+        }
+
+        async function loadBlogPosts() {
+            const grid = document.getElementById("blog-grid");
+            const emptyEl = document.getElementById("blog-empty");
+            const errorEl = document.getElementById("blog-error");
+
+            if (!window.contentful || CONTENTFUL_SPACE_ID === "YOUR_SPACE_ID") {
+                console.warn("Contentful not configured yet — add your Space ID and Access Token.");
+                errorEl.classList.remove("hidden");
+                grid.querySelectorAll(".blog-skeleton").forEach(el => el.remove());
+                return;
+            }
+
+            try {
+                const client = window.contentful.createClient({
+                    space: CONTENTFUL_SPACE_ID,
+                    accessToken: CONTENTFUL_ACCESS_TOKEN,
+                    environment: CONTENTFUL_ENVIRONMENT
+                });
+
+                const response = await client.getEntries({
+                    content_type: "blogPost",
+                    order: "-fields.publishDate",
+                    limit: 8
+                });
+
+                grid.querySelectorAll(".blog-skeleton").forEach(el => el.remove());
+
+                if (!response.items || response.items.length === 0) {
+                    emptyEl.classList.remove("hidden");
+                    return;
+                }
+
+                response.items.forEach((item, i) => {
+                    const fields = item.fields;
+                    const color = blogColors[i % blogColors.length];
+                    const icon = blogIcons[i % blogIcons.length];
+                    const imageUrl = fields.featuredImage && fields.featuredImage.fields
+                        ? "https:" + fields.featuredImage.fields.file.url
+                        : null;
+
+                    const card = document.createElement("article");
+                    card.className = "glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group gsap-fade-up cursor-pointer";
+                    card.innerHTML = `
+                        <div class="h-48 ${color.bg} overflow-hidden relative">
+                            ${imageUrl
+                                ? `<img src="${imageUrl}" alt="${escapeHtml(fields.title)}" class="w-full h-full object-cover">`
+                                : `<div class="absolute inset-0 ${color.overlay} group-hover:bg-transparent transition-all duration-300"></div>
+                                   <i class="${icon} text-6xl ${color.text} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></i>`
+                            }
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs text-saffron font-bold mb-2">${escapeHtml((fields.category || "").toUpperCase())}</p>
+                            <h3 class="font-bold text-lg text-dark mb-3 leading-tight group-hover:text-primary transition-colors">${escapeHtml(fields.title)}</h3>
+                            <p class="text-sm text-gray-600 line-clamp-2">${escapeHtml(fields.excerpt)}</p>
+                        </div>
+                    `;
+                    card.addEventListener("click", () => openBlogModal(fields, imageUrl, color, icon));
+                    grid.appendChild(card);
+                });
+
+                // Re-run fade-up animation on newly added cards
+                if (window.gsap && window.ScrollTrigger) {
+                    gsap.utils.toArray('#blog-grid .gsap-fade-up').forEach(element => {
+                        gsap.fromTo(element,
+                            { y: 50, opacity: 0 },
+                            {
+                                y: 0, opacity: 1, duration: 0.8, ease: "power3.out",
+                                scrollTrigger: { trigger: element, start: "top 85%", toggleActions: "play none none reverse" }
+                            }
+                        );
+                    });
+                }
+            } catch (err) {
+                console.error("Failed to load blog posts from Contentful:", err);
+                grid.querySelectorAll(".blog-skeleton").forEach(el => el.remove());
+                errorEl.classList.remove("hidden");
+            }
+        }
+
+        function openBlogModal(fields, imageUrl, color, icon) {
+            const modal = document.getElementById("blogModal");
+            const imageBox = document.getElementById("blogModalImage");
+            const categoryEl = document.getElementById("blogModalCategory");
+            const titleEl = document.getElementById("blogModalTitle");
+            const dateEl = document.getElementById("blogModalDate");
+            const bodyEl = document.getElementById("blogModalBody");
+
+            imageBox.innerHTML = imageUrl
+                ? `<img src="${imageUrl}" alt="${escapeHtml(fields.title)}" class="w-full h-full object-cover">`
+                : `<div class="absolute inset-0 flex items-center justify-center"><i class="${icon} text-7xl ${color.text} opacity-40"></i></div>`;
+
+            categoryEl.textContent = (fields.category || "").toUpperCase();
+            titleEl.textContent = fields.title || "";
+            dateEl.textContent = formatDate(fields.publishDate);
+
+            if (fields.body && window.RichTextHtmlRenderer) {
+                bodyEl.innerHTML = window.RichTextHtmlRenderer.documentToHtmlString(fields.body);
+            } else {
+                bodyEl.innerHTML = `<p>${escapeHtml(fields.excerpt || "")}</p>`;
+            }
+
+            modal.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+            if (window.lenis) lenis.stop();
+        }
+
+        function closeBlogModal() {
+            document.getElementById("blogModal").classList.add("hidden");
+            document.body.style.overflow = "";
+            if (window.lenis) lenis.start();
+        }
+
+        document.getElementById("blogModalClose").addEventListener("click", closeBlogModal);
+        document.getElementById("blogModalOverlay").addEventListener("click", closeBlogModal);
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeBlogModal();
+        });
+
+        loadBlogPosts();
+
+        // Contact form -> Formspree
+        const contactForm = document.getElementById("contactForm");
+        const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+        const contactSubmitText = document.getElementById("contactSubmitText");
+        const contactFormSuccess = document.getElementById("contactFormSuccess");
+        const contactFormError = document.getElementById("contactFormError");
+
+        contactForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+            contactFormSuccess.classList.add("hidden");
+            contactFormError.classList.add("hidden");
+            contactSubmitBtn.disabled = true;
+            contactSubmitText.textContent = "Sending...";
+
+            try {
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (response.ok) {
+                    contactFormSuccess.classList.remove("hidden");
+                    contactForm.reset();
+                } else {
+                    contactFormError.classList.remove("hidden");
+                }
+            } catch (err) {
+                console.error("Form submission error:", err);
+                contactFormError.classList.remove("hidden");
+            } finally {
+                contactSubmitBtn.disabled = false;
+                contactSubmitText.textContent = "Submit Enquiry";
+            }
         });
     </script>
 </body>
